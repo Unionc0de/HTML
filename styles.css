@@ -171,21 +171,21 @@
 }
 
 .articleContainer{
-    padding-top: 10px;;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 10px;
+    padding: 10px 30px;
     background-color: blue;
     border-radius: 30px;
+    max-width: 1000px;
+    margin: auto;
     margin-top: 20px;
-    margin-right: 200px;
-    margin-left: 200px;  
+    display: flex;
+    justify-content: center;
+    
 }
 
 .articleButton{
     margin-top: 0px;
     margin-bottom: 30px;
-    margin-left: 420px;
+    text-align: center;
     width: 200px;
     height: 50px;
     background-color: rgb(40,40,40);
@@ -193,6 +193,7 @@
     border-radius: 8px;
     font-size: 22px;
     font-weight:700;  
+    
 }
 
 .articleTitle{
@@ -207,15 +208,18 @@
     box-shadow: 0 0 20px black;
 }
 
-.form-container {
+.form__container {
     padding: 40px;
     border-radius: 8px;
     max-width: 400px;
     width: 100%;
     font-size: 28px;
     color:black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    margin-left: 300px;
+    
     
 }
 
