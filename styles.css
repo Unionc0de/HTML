@@ -450,10 +450,61 @@ input, textarea {
 }
 
 .table{
-    font-size: 28px;
+    font-size: 32px;
     justify-content: center;
 }
 
+.tableContainer{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.tableTitle{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 52px;
+    text-align: center;
+    width: 100%;
+}
+
+.tableLabel{
+    padding: 50px 20px 50px 20px;
+    margin: 10px;
+    color:blue;
+    background-color: white;
+    border-radius: 20px;
+    border: 8px;
+    border-color: black;
+}
+
+.tableElement{
+    padding: 50px 30px 50px 30px;
+    color:white;
+    background-color: blue;
+    border: 8px;
+    border-color: black;
+}
+
+
 .footer{
-    
+    background-color: rgb(40, 40, 40);
+    width: 100%;
+    padding: 30px 0px 30px 0px;
+}
+
+.footerText{
+    color:white;
+    text-align: center;
+}
+
+.footerLogo{
+    width: 200px;
+    height: 200px;
+}
+
+.logoContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
