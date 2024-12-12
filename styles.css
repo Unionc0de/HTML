@@ -449,6 +449,11 @@ input, textarea {
     border-radius: 8px;
 }
 
+.table{
+    font-size: 28px;
+    justify-content: center;
+}
+
 .footer{
     
 }
