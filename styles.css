@@ -1,510 +1,178 @@
-@media screen and (min-width:1px) and  (max-width:450px) {
-    .container{
-        display: flex;
-        justify-content: space-between;
-        color: blue;
-        font-size: 10px;
-        width:100%;
-    }
-    
-    .header{
-        display: flex;
-        gap: 5px;
-        padding-right: 0px;
-        margin-bottom: 20px;
-        align-items: center;
-        flex-direction: row-reverse;
-    }
-    
-    .logo{
-        display: none;
-    }
+<!DOCTYPE html>
+<html lang="en">
 
-    .code{
-        display: none;
-    }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Union c0de</title>
+</head>
+<div class="body__container">
 
-    .codeTitle{
-        display: none;
-    }
-    
-    .codeContainer{
-        display: none;
-    }
-
-    .serviceTitle{
-        font-size: 48px;
-        text-align: start;
-        padding-right: 3px;
-        color:white;
-        text-decoration: underline;
-    }
-    
-    .serviceContainer{
-        display: flex;
-        justify-content: space-between;
-        gap: 8px;
-    }
-
-    
-}
-
-@media screen and (max-width:600px){
-    .container{
-        display: flex;
-        justify-content: space-between;
-        color: blue;
-        font-size: 18px;
-        margin-top: 10px;
-        width:100%;
-    }
-
-    .header{
-        display: flex;
-        gap: 100px;
-        padding-right: 0px;
-        align-items: center;
-        flex-direction: row-reverse;
-    }
-
-    .logo{
-        width: 100px;
-        height: 100px;
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
-
-    .code{
-        color:rgb(0, 157, 13);
-        font-size: 14px;
-        text-align: center;
-    }
-    
-    .codeTitle{
-        font-size: 20px;
-        text-align: center;
-        color: white;
+    <body class = "body">
+        <header class = "header">
+            <nav class="container">
+                <a>Element 1</a>
+                <a>Element 2</a>
+                <a>Element 3</a>
+                <a>Element 4</a>
+            </nav>
+            <div class="logo">
+                <img src="./image.jpg" style="height: 100px;width: 100px;">
+            </div>
+        </header>
+        <section class="cover">
+            <h1 class = "mainTitle">Union c0de</h1>
+            <h2 class = "subMainTitle">Coding on C++,C#,Python</h2>
+            <p class="text">text</p>
+            <p class="text">text</p>
+            <p class="text">text</p>
+            <p class="text">text</p>
+            <p class="text">text</p>
+            <p class="text">text</p>
+            <p class="text">text</p>
+            <p class="text">text</p>
+            <p class="text">text</p>
+            <button class="button">Button</button>
+        </section>
         
+        <section class="skillContainer">
+            <h2 class="skillsTitle">Skills</h2>
+            <ol>
+                <li class="skills">Skill 1</li>
+                <li class="skills">Skill 2</li>
+                <li class="skills">Skill 3</li>
+                <li class="skills">Skill 4</li>
+                <li class="skills">Skill 5</li>
+            </ol>
+        </section>
+
+        <h2 class = "serviceLabel"> My Services</h2>
+        <section class = "serviceContainer">
+            <section class = "service">
+                <h2 class = "serviceTitle">Service 1</h2>
+                <p class="serviceItem">Text</p>
+                <p class="serviceItem">Text</p>
+                <p class="serviceItem">Text</p>
+                <p class="serviceItem">Text</p>
+            </section>
+            <section class = "service">
+                <h2 class = "serviceTitle">Service 2</h2>
+                <p class="serviceItem">Text</p>
+                <p class="serviceItem">Text</p>
+                <p class="serviceItem">Text</p>
+                <p class="serviceItem">Text</p>
+            </section>
+            <section class = "service">
+                <h2 class = "serviceTitle">Service 3</h2>
+                <p class="serviceItem">Text</p>
+                <p class="serviceItem">Text</p>
+                <p class="serviceItem">Text</p>
+                <p class="serviceItem">Text</p>
+            </section>
+        </section>
+        
+        
+        <section class ="codeContainer">
+            <h2 class="codeTitle">Code snippet</h2>
+            <code class = "code">
+                <pre>
+void readFile(string path, string* &arr, int &size) {
+    ifstream in(path); 
+    if (in.is_open()) {
+        string str;
+        while (getline(in, str))
+            addStrToEnd(arr, str, size++);
+        }
+
+    }
+    else
+    {
+        cout << "File is not found!";
     }
 
-    
-    .codeContainer{
-        padding-top: 10px;;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-bottom: 10px;
-        background-color: rgb(40, 40, 40);
-        border-radius: 30px;
-        margin-top: 20px;
-        margin-right: 50px;
-        margin-left: 50px;
-        box-shadow: 0 0 20px rgb(0, 157, 13);
-    }
+in.close();
+                </pre>
+            </code>
+        </section>
+        
+        <section class = "articleContainer">
+            <article>
+                <h2 class="articleTitle">Order program</h2>
+                <form action="/submit-form" method="post" class="form-container">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="3" ></textarea>
+                </form>
+                <button class="articleButton">Submit</button>
+            </article>
+        </section>
+        
+        <h2 class = "tableTitle">Popularity of programming languages</h2>
+        <section class = "tableContainer">
+            <table class = "table">
+                <tr >
+                    <th class = "tableLabel">       </th>
+                    <th class = "tableLabel">Python</th> 
+                    <th class = "tableLabel">C#</th> 
+                    <th class = "tableLabel">JavaScript</th> 
+                    <th class = "tableLabel">Java</th>
+                    <th class = "tableLabel">TypeScript</th> 
+                </tr>
+                <tr>
+                    <th class = "tableLabel">Percent of Popularity</th>
+                    <td class = "tableElement">13.4%</td>
+                    <td class = "tableElement" >13%</td>
+                    <td class = "tableElement">19%</td>
+                    <td class = "tableElement">14%</td>
+                    <td class = "tableElement">7%</td>
+                </tr>
+                <tr>
+                    <th class = "tableLabel">Average salary/month</th>
+                    <td class = "tableElement">1000$</td>
+                    <td class = "tableElement">1100$</td>
+                    <td class = "tableElement">1150$</td>
+                    <td class = "tableElement">900$</td>
+                    <td class = "tableElement">2000$</td>
+                </tr>
+                <tr>
+                    <th class = "tableLabel">Difficulty</th>
+                    <td class = "tableElement">3/10</td>
+                    <td class = "tableElement">7/10</td>
+                    <td class = "tableElement">10/10</td>
+                    <td class = "tableElement">6/10</td>
+                    <td class = "tableElement">6/10</td>
+                </tr>
+                <tr>
+                    <th class = "tableLabel">My own score</th>
+                    <td class = "tableElement">10/10</td>
+                    <td class = "tableElement">7/10</td>
+                    <td class = "tableElement">3/10</td>
+                    <td class = "tableElement">5/10</td>
+                    <td class = "tableElement">5/10</td>
+                </tr>
+            </table>
+        </section>
+        
+        <footer class = "footer">
+            <div class="logoContainer">
+                <img src="./image.jpg" class ="footerLogo">
+            </div>
+            <p class = "footerText">Some footer info</p>
+            <nav class="container">
+                <a>Element 1</a>
+                <a>Element 2</a>
+                <a>Element 3</a>
+                <a>Element 4</a>
+            </nav>
+        </footer>
+    </body>
+</div>
 
-
-    .serviceLabel{
-        font-size: 20px;
-        justify-content: center;
-        display: flex;
-        margin-bottom: 20px;
-        width:100%;
-        color:black;
-    }
-
-    .serviceTitle{
-        font-size: 16px;
-        text-align: start;
-        padding-left: 20px;
-        color:white;
-        text-decoration: underline;
-    }
-    
-    .serviceContainer{
-        display: flex;
-        justify-content: space-between;
-        gap: 45px;
-    }
-    
-}
-
-@media screen and (min-width:601px) and  (max-width:1919px){
-    .container{
-        display: flex;
-        justify-content: space-between;
-        color: blue;
-        font-size: 20px;
-        margin-top: 10px;
-        width:100%;
-    }
-
-    .logo{
-        width: 100px;
-        height: 100px;
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
-
-    .header{
-        display: flex;
-        gap: 50px;
-        padding-right: 0px;
-        align-items: center;
-        flex-direction: row-reverse;
-    }
-
-    .code{
-        color:rgb(0, 157, 13);
-        font-size: 18px;
-        text-align: center;
-    }
-
-    
-    .codeContainer{
-        padding-top: 10px;;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-bottom: 10px;
-        background-color: rgb(40, 40, 40);
-        border-radius: 30px;
-        margin-top: 20px;
-        margin-right: 50px;
-        margin-left: 50px;
-        box-shadow: 0 0 20px rgb(0, 157, 13);
-    }
-
-
-    .codeTitle{
-        font-size: 28px;
-        text-align: center;
-        color: white;
-    }
-
-    .serviceLabel{
-        font-size: 28px;
-        justify-content: center;
-        display: flex;
-        margin-bottom: 20px;
-        width:100%;
-        color:black;
-    }
-    
-    .serviceTitle{
-        font-size: 20px;
-        text-align: start;
-        padding-left: 20px;
-        color:white;
-        text-decoration: underline;
-    }
-    
-    .serviceContainer{
-        display: flex;
-        justify-content: space-between;
-        gap: 55px;
-    }
-    
-}
-
-
-@media screen and (min-width:1919px){
-    .container{
-        display: flex;
-        justify-content: space-between;
-        color: blue;
-        font-size: 24px;
-        margin-top: 10px;
-        width:100%;
-    }
-
-    .logo{
-        width: 100px;
-        height: 100px;
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
-
-    .header{
-        display: flex;
-        gap: 200px;
-        padding-right: 50px;
-        align-items: center;
-        flex-direction: row-reverse;
-    }
-
-    .code{
-        color:rgb(0, 157, 13);
-        font-size: 28px;
-        text-align: start;
-    }
-
-    .codeTitle{
-        font-size: 42px;
-        text-align: center;
-        color: white;
-    }    
-
-    
-    .codeContainer{
-        padding-top: 10px;;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-bottom: 10px;
-        background-color: rgb(40, 40, 40);
-        border-radius: 30px;
-        margin-top: 20px;
-        margin-right: 50px;
-        margin-left: 50px;
-        box-shadow: 0 0 20px rgb(0, 157, 13);
-    }
-
-
-    .serviceLabel{
-        font-size: 52px;
-        justify-content: center;
-        display: flex;
-        margin-bottom: 20px;
-        width:100%;
-        color:black;
-    }
-
-    .serviceTitle{
-        font-size: 32px;
-        text-align: start;
-        padding-left: 20px;
-        color:white;
-        text-decoration: underline;
-    }
-
-    .serviceContainer{
-        display: flex;
-        justify-content: space-between;
-        gap: 70px;
-    }
-    
-    
-}
-
-.serviceItem{
-    font-size: 22px;
-    color:white;
-    text-align: start;
-    padding-left: 20px;
-}
-
-.service{
-    background-color: blue;
-    border-radius: 30px;
-    width: 100%;
-    box-shadow: 0 0 20px black;
-    margin: 10px;
-}
-
-.body{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow';
-}
-
-::-webkit-scrollbar-thumb{
-    background-color: blue;
-    border-radius: 3px;
-}
-::-webkit-scrollbar{
-    width: 7px;
-}
-
-.text{
-    font-size: 28px; 
-    color: white;
-}
-
-.skillsTitle{
-    font-size: 52px;
-    text-align: center;
-    color: black;
-}
-
-.skills{
-    font-size:32px;
-    text-align: center;
-    margin-bottom: 20px;
-    
-}
-
-.skillContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.mainTitle{
-    font-size: 52px;
-    color:white;
-    text-align: center;
-}
-
-.subMainTitle{
-    color:white;
-    text-align: center;
-    text-transform:uppercase;  
-}
-
-.footer{
-    font-size: 28px; 
-}
-
-.button{
-    margin-top: 20px;
-    width: 200px;
-    height: 50px;
-    background-color: blue;
-    color: white;
-    border-radius: 8px;
-    font-size: 22px;
-    font-weight:700;
-    box-shadow: 0 0 10px blue;
-}
-
-.cover{
-    padding-top: 40px;
-    padding-bottom: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: rgb(40, 40, 40);
-    border-radius: 30px;
-    margin-bottom: 50px;
-    box-shadow: 0 0 20px blue;
-}
-
-.ASCII{
-    font-size: 28px;
-    text-align: start;
-    color:black; 
-    padding-left: 100px;
-    margin-top: 20px;
-}
-
-.quote{
-    margin-top: 50px;
-    font-size: 28px;
-    text-align: center;
-    font-weight: 700;
-    text-decoration: line-through;
-}
-
-.articleContainer{
-    padding: 10px 30px;
-    background-color: blue;
-    border-radius: 30px;
-    max-width: 700px;
-    margin: auto;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.articleButton{
-    margin-top: 0px;
-    margin-bottom: 30px;
-    width: 200px;
-    height: 50px;
-    background-color: rgb(40,40,40);
-    color: white;
-    border-radius: 8px;
-    font-size: 22px;
-    font-weight:700;
-    margin-left: 50px;
-}
-
-.articleTitle{
-    color: white;
-    font-size: 46px;
-    text-align: center;
-}
-
-.articleText{
-    font-size: 28px;
-    color:white;
-    box-shadow: 0 0 20px black;
-}
-
-.form-container {
-    border-radius: 8px;
-    max-width: 400px;
-    width: 100%;
-    font-size: 28px;
-    color:black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-}
-
-.logo{
-    border-radius: 8px;
-}
-
-.table{
-    font-size: 32px;
-    justify-content: center;
-}
-
-.tableContainer{
-    display: flex;
-    justify-content: center;
-    margin: 30px;
-}
-
-.tableTitle{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 52px;
-    text-align: center;
-    width: 100%;
-}
-
-.tableLabel{
-    padding: 50px 20px 50px 20px;
-    margin: 10px;
-    color:blue;
-    background-color: white;
-    border-radius: 20px;
-    border: 8px;
-    border-color: black;
-}
-
-.tableElement{
-    padding: 50px 30px 50px 30px;
-    color:white;
-    background-color: blue;
-    border: 8px;
-    border-color: black;
-}
-
-
-.footer{
-    background-color: rgb(40, 40, 40);
-    width: 100%;
-    padding: 30px 0px 30px 0px;
-}
-
-.footerText{
-    color:white;
-    text-align: center;
-}
-
-.footerLogo{
-    width: 200px;
-    height: 200px;
-}
-
-.logoContainer{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
+</html>
