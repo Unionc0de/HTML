@@ -71,7 +71,6 @@
     
     .tableElement{
         padding: 10px 5px 10px 5px;
-        color:white;
         font-size: 10px;
         background-color: blue;
         border: 2px;
@@ -180,7 +179,6 @@
     
     .tableElement{
         padding: 18px 6px 18px 6px;
-        color:white;
         background-color: blue;
         border: 8px;
         border-color: black;
@@ -287,7 +285,6 @@
     
     .tableElement{
         padding: 20px 10px 20px 10px;
-        color:white;
         background-color: blue;
         border: 8px;
         border-color: black;
@@ -396,7 +393,6 @@
     
     .tableElement{
         padding: 50px 30px 50px 30px;
-        color:white;
         background-color: blue;
         border: 8px;
         border-color: black;
@@ -598,4 +594,12 @@ input, textarea {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+tr:nth-child(2n){
+    color: red !important;
+}
+
+tr:nth-child(2n+1){
+    color: white !important;
 }
