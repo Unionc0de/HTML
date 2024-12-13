@@ -12,35 +12,32 @@
 
     <body class = "body">
         <header class = "header">
-            <div class="container">
-                <nav>Element 1</nav>
-                <nav>Element 2</nav>
-                <nav>Element 3</nav>
-                <nav>Element 4</nav>
-            </div>
+            <nav class="container">
+                <a>Element 1</a>
+                <a>Element 2</a>
+                <a>Element 3</a>
+                <a>Element 4</a>
+            </nav>
             <div class="logo">
                 <img src="./image.jpg" style="height: 100px;width: 100px;">
             </div>
         </header>
-        <div class="cover">
+        <section class="cover">
             <h1 class = "mainTitle">Union c0de</h1>
             <h2 class = "subMainTitle">Coding on C++,C#,Python</h2>
-            <div class="text">text</div>
-            <div class="text">text</div>
-            <div class="text">text</div>
-            <div class="text">text</div>
-            <div class="text">text</div>
-            <div class="text">text</div>
-            <div class="text">text</div>
-            <div class="text">text</div>
-            <div class="text">text</div>
-            <div class="text">text</div>
-            <div class="text">text</div>
-            <div class="text">text</div>
+            <p class="text">text</p>
+            <p class="text">text</p>
+            <p class="text">text</p>
+            <p class="text">text</p>
+            <p class="text">text</p>
+            <p class="text">text</p>
+            <p class="text">text</p>
+            <p class="text">text</p>
+            <p class="text">text</p>
             <button class="button">Button</button>
-        </div>
+        </section>
         
-        <div class="skillContainer">
+        <section class="skillContainer">
             <h2 class="skillsTitle">Skills</h2>
             <ol>
                 <li class="skills">Skill 1</li>
@@ -49,10 +46,10 @@
                 <li class="skills">Skill 4</li>
                 <li class="skills">Skill 5</li>
             </ol>
-        </div>
+        </section>
 
         <h2 class = "serviceLabel"> My Services</h2>
-        <div class = "serviceContainer">
+        <section class = "serviceContainer">
             <section class = "service">
                 <h2 class = "serviceTitle">Service 1</h2>
                 <p class="serviceItem">Text</p>
@@ -61,23 +58,23 @@
                 <p class="serviceItem">Text</p>
             </section>
             <section class = "service">
-                <h2 class = "serviceTitle">Service 1</h2>
+                <h2 class = "serviceTitle">Service 2</h2>
                 <p class="serviceItem">Text</p>
                 <p class="serviceItem">Text</p>
                 <p class="serviceItem">Text</p>
                 <p class="serviceItem">Text</p>
             </section>
             <section class = "service">
-                <h2 class = "serviceTitle">Service 1</h2>
+                <h2 class = "serviceTitle">Service 3</h2>
                 <p class="serviceItem">Text</p>
                 <p class="serviceItem">Text</p>
                 <p class="serviceItem">Text</p>
                 <p class="serviceItem">Text</p>
             </section>
-        </div>
+        </section>
         
         
-        <div class ="codeContainer">
+        <section class ="codeContainer">
             <h2 class="codeTitle">Code snippet</h2>
             <code class = "code">
                 <pre>
@@ -98,9 +95,9 @@ void readFile(string path, string* &arr, int &size) {
 in.close();
                 </pre>
             </code>
-        </div>
+        </section>
         
-        <div class = "articleContainer">
+        <section class = "articleContainer">
             <article>
                 <h2 class="articleTitle">Order program</h2>
                 <form action="/submit-form" method="post" class="form-container">
@@ -115,22 +112,65 @@ in.close();
                 </form>
                 <button class="articleButton">Submit</button>
             </article>
-        </div>
+        </section>
         
-        <article class = "quote">Лишь утратив всё до конца, мы обретаем свободу.<sub class="quoteSub">@Тайлер Дерден</sub></article>
+        <h2 class = "tableTitle">Popularity of programming languages</h2>
+        <section class = "tableContainer">
+            <table class = "table">
+                <tr >
+                    <th class = "tableLabel">       </th>
+                    <th class = "tableLabel">Python</th> 
+                    <th class = "tableLabel">C#</th> 
+                    <th class = "tableLabel">JavaScript</th> 
+                    <th class = "tableLabel">Java</th>
+                    <th class = "tableLabel">TypeScript</th> 
+                </tr>
+                <tr>
+                    <th class = "tableLabel">Percent of Popularity</th>
+                    <td class = "tableElement">13.4%</td>
+                    <td class = "tableElement" >13%</td>
+                    <td class = "tableElement">19%</td>
+                    <td class = "tableElement">14%</td>
+                    <td class = "tableElement">7%</td>
+                </tr>
+                <tr>
+                    <th class = "tableLabel">Average salary/month</th>
+                    <td class = "tableElement">1000$</td>
+                    <td class = "tableElement">1100$</td>
+                    <td class = "tableElement">1150$</td>
+                    <td class = "tableElement">900$</td>
+                    <td class = "tableElement">2000$</td>
+                </tr>
+                <tr>
+                    <th class = "tableLabel">Difficulty</th>
+                    <td class = "tableElement">3/10</td>
+                    <td class = "tableElement">7/10</td>
+                    <td class = "tableElement">10/10</td>
+                    <td class = "tableElement">6/10</td>
+                    <td class = "tableElement">6/10</td>
+                </tr>
+                <tr>
+                    <th class = "tableLabel">My own score</th>
+                    <td class = "tableElement">10/10</td>
+                    <td class = "tableElement">7/10</td>
+                    <td class = "tableElement">3/10</td>
+                    <td class = "tableElement">5/10</td>
+                    <td class = "tableElement">5/10</td>
+                </tr>
+            </table>
+        </section>
         
-        <aside class = "ASCII">
-            <pre>
-                ___   _____ ______________     ___    ____  ______
-                /   | / ___// ____/  _/  _/    /   |  / __ \/_  __/
-               / /| | \__ \/ /    / / / /     / /| | / /_/ / / /   
-              / ___ |___/ / /____/ /_/ /     / ___ |/ _, _/ / /    
-             /_/  |_/____/\____/___/___/    /_/  |_/_/ |_| /_/
-            </pre>
-        </aside>
-
-        <footer>
-            <main class="footer">Some footer info</main>
+        <footer class = "footer">
+            <div class="logoContainer">
+                <img src="./image.jpg" class ="footerLogo">
+            </div>
+            <p class = "footerText">Some footer info</p>
+            <nav class="container">
+                <a>Element 1</a>
+                <a>Element 2</a>
+                <a>Element 3</a>
+                <a>Element 4</a>
+            </nav>
         </footer>
     </body>
 </div>
